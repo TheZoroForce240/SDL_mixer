@@ -2558,6 +2558,11 @@ extern SDL_DECLSPEC Mix_Chunk * SDLCALL Mix_GetChunk(int channel);
  */
 extern SDL_DECLSPEC void SDLCALL Mix_CloseAudio(void);
 
+
+
+extern SDL_DECLSPEC int SDLCALL Mix_GetChannelPlayingTime(int channel);
+extern SDL_DECLSPEC void SDLCALL Mix_SetChannelPlayingTime(int channel, int playing);
+
 /* Ends C function definitions when using C++ */
 #ifdef __cplusplus
 }

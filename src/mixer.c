@@ -1780,3 +1780,13 @@ int Mix_MasterVolume(int volume)
     SDL_SetAtomicInt(&master_volume, volume);
     return prev_volume;
 }
+
+
+int Mix_GetChannelPlayingTime(int channel)
+{
+    return mix_channel[channel].playing;
+}
+void Mix_SetChannelPlayingTime(int channel, int playing)
+{
+    mix_channel[channel].playing = playing;
+}
